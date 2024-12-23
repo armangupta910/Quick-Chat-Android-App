@@ -129,7 +129,7 @@ class ChatActivity : AppCompatActivity() {
 
     private fun initStompClient() {
         // Initialize Stomp client with your backend WebSocket URL
-        stompClient = Stomp.over(Stomp.ConnectionProvider.OKHTTP, "ws://16.171.43.33:3000/ws-chat")
+        stompClient = Stomp.over(Stomp.ConnectionProvider.OKHTTP, "ws://<server-url>:<port-number>/ws-chat")
         stompClient.connect()
 
         // Handle WebSocket connection
